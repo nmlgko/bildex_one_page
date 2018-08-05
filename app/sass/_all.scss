@@ -1,0 +1,114 @@
+@import "vars";
+
+body {
+	font-family: $font-regular;
+	color: $dark-color;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: table;
+}
+.wrap {
+	max-width: 1200px;
+	padding-left: 33px;
+	padding-right: 33px;
+	margin-left: auto;
+	margin-right: auto;
+}
+// Social Icons
+.social {
+	float: left;
+	&__item {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 20px;
+	}
+}
+
+.sprites { background: url('../img/sprites2.png') no-repeat; }
+.ar-black { width: 9px; height: 6px; background-position: -129px 0; }
+.ar-white-mob-down { width: 13px; height: 9px; background-position: -96px 0; }
+.ar-white-mob-up { width: 13px; height: 9px; background-position: -68px -41px; }
+.ar-white { width: 9px; height: 6px; background-position: -158px 0; }
+.flag--ru { width: 28px; height: 20px; background-position: 0 0; }
+.flag--ua { width: 28px; height: 20px; background-position: -48px 0; }
+.flag--uk { width: 28px; height: 20px; background-position: -101px -30px; }
+.flag-ru { width: 14px; height: 10px; background-position: 0 -40px; }
+.flag-ua { width: 14px; height: 10px; background-position: -34px -40px; }
+.flag-uk { width: 14px; height: 10px; background-position: -149px -40px; }
+
+.caption {
+	display: block;
+	font-family: $font-heading;
+	font-size: 30px;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+.border {
+  position: absolute;
+  z-index: 1;
+  display: block;
+	background-color: rgba(255, 255, 255, .2);
+  &-top,
+  &-bottom {
+  	height: 1px;
+  }
+  &-top {
+  	top: 0;  	
+  }
+  &-bottom {
+  	bottom: 0;
+  }
+  &-left,
+  &-right {
+		width: 1px;
+  }
+  &-left {
+  	left: 0;
+  }
+  &-right {
+		right: 0;
+  }
+}
+
+.btn-more {
+	display: inline-block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 1.5;
+	vertical-align: middle;
+	white-space: nowrap;
+	transition: $transition;
+	&__text {
+		display: inline-block;
+		margin-right: 10px;
+		font-family: $font-btn;
+		font-size: 12px;
+		vertical-align: middle;
+	}
+}
+.btn-arrow {
+	display: inline-block;
+}
+
+.stop-scrolling {
+	overflow: hidden;
+}
+
+.parallax {
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+	.wrap {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.caption {
+		font-size: 24px;
+	}
+}

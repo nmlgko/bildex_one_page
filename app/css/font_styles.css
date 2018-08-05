@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'PTSans-Bold';
+    src: url('../fonts/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSans-Bold.woff') format('woff'),
+    url('../fonts/PTSans-Bold.ttf')  format('truetype'),
+    url('../fonts/PTSans-Bold.svg#PTSans-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSans-Regular';
+    src: url('../fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTSans-Regular.woff') format('woff'),
+        url('../fonts/PTSans-Regular.ttf')  format('truetype'),
+        url('../fonts/PTSans-Regular.svg#PTSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTAstraSans-Bold';
+    src: url('../fonts/PTAstraSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTAstraSans-Bold.woff') format('woff'),
+        url('../fonts/PTAstraSans-Bold.ttf')  format('truetype'),
+        url('../fonts/PTAstraSans-Bold.svg#PTAstraSans-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTAstraSans-Regular';
+    src: url('../fonts/PTAstraSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTAstraSans-Regular.woff') format('woff'),
+        url('../fonts/PTAstraSans-Regular.ttf')  format('truetype'),
+        url('../fonts/PTAstraSans-Regular.svg#PTAstraSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo2-Black';
+    src: url('../fonts/Exo2-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Exo2-Black.otf')  format('opentype'),
+        url('../fonts/Exo2-Black.woff') format('woff'),
+        url('../fonts/Exo2-Black.ttf')  format('truetype'),
+        url('../fonts/Exo2-Black.svg#Exo2-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

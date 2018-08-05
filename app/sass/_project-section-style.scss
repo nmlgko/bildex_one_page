@@ -1,0 +1,249 @@
+.project {
+	padding-top: 90px;
+	.caption {
+		margin-bottom: 30px;
+	}
+	&-holder {
+		padding-bottom: 120px;
+		&.img-left {
+			.project{
+				&__img {
+					float: left;
+				}
+				&__info {
+					float: right;
+				}
+			}
+		}
+		&.img-right {
+			.project{
+				&__img {
+					float: right;
+				}
+				&__info {
+					float: left;
+				}
+			}
+		}
+		&:hover {
+			.btn-more__text {
+				color: $accent-color2;
+			}
+			.btn-arrow {
+				fill: $accent-color2;
+			}
+			.project__info {
+				opacity: 1;
+			}
+		}
+	}
+	&__img {
+		position: relative;
+		@media screen and (min-width: 960px) {
+			width: 65%;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 72%;
+		}
+		padding-left: 50px;
+		padding-right: 50px;
+		.img-holder {
+			position: relative;
+			margin-bottom: 25px;
+			.bottom-layer {
+				position: absolute;
+				left: -50px;
+				top: 66px;
+				z-index: -1;
+				width: calc(100% - 200px);
+				height: calc(100% + 40px);
+				min-width: 460px;
+				border: {
+					width: 1px;
+					style: solid;
+					color: #e5e5e5;
+				}
+				background-color: $light-color;
+	  		box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+			}
+		}
+		.category {
+			position: absolute;
+			top: 85px;
+			left: 17px;
+			z-index: 1;
+			font-size: 14px;
+			color: $accent-color1;
+			-webkit-transform: rotate(-90deg) translateX(-100%);
+			-o-transform: rotate(-90deg) translateX(-100%);
+			-moz-transform: rotate(-90deg) translateX(-100%);
+			transform: rotate(-90deg) translateX(-100%);
+			-webkit-transform-origin: 0 0;
+			-o-transform-origin: 0 0;
+			-moz-transform-origin: 0 0;
+			transform-origin: 0 0;
+		}
+	}
+	&__link {
+		display: block;
+		&_title {
+			position: relative;
+			display: inline-block;
+			max-width: 220px;
+			font-family: $font-heading;
+			font-size: 18px;
+			vertical-align: baseline;
+			margin-right: 5%;
+			&::before {
+				@extend %add-el;
+				top: 8px;
+				left: -70px;
+				width: 50px;
+				height: 4px;
+				background-color: $accent-color3;
+			}
+		}
+		.btn-more {
+			padding-top: 0;
+			padding-bottom: 0;
+			vertical-align: baseline;
+			&__text {
+				position: relative;
+				opacity: 1;
+				color: $accent-color1;
+			}
+		}
+		.btn-arrow {
+			fill: $accent-color1;
+		}
+	}
+	&__info {
+		width: 300px;
+		padding-top: 80px;
+		opacity: 0;
+		transition: $transition;
+		&_heading {
+			font-family: $font-heading;
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+		&_item {
+			position: relative;
+			display: block;
+			margin-bottom: 10px;
+			font-size: 12px;
+			line-height: 1.5;
+			&::before {
+				@extend %add-el;
+				top: 8px;
+				left: -20px;
+				width: 10px;
+				height: 2px;
+				background-color: $accent-color3;
+			}
+			b {
+				font-family: $font-heading;
+			}
+		}
+		&_details {
+			font-size: 12px;
+			line-height: 1.5;
+			margin-bottom: 7px;
+		}
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.project {
+		&-holder {
+			padding-bottom: 90px;
+		}
+		&__img {
+			.img-holder {
+				float: none;
+				width: 100%;
+			}
+		}
+		&__info {
+			float: none;
+			width: 100%;
+			opacity: 1;
+			&_block {
+				float: left;
+				width: 50%;
+				&:first-child {
+					padding-left: 120px;
+					padding-right: 20px;
+				}
+			}
+		}
+		&__link {
+			&_title {
+				margin-left: 70px;
+			}
+			.btn-more {
+				float: right;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.project {
+		padding-top: 50px;
+		margin-bottom: 30px;
+		&-holder {
+			padding-bottom: 30px;
+			&.img-left {
+				.project__img {
+					float: none;
+				}
+			}
+			&.img-right {
+				.project__img {
+					float: none;
+				}
+			}
+		}
+		&__img {
+			margin-left: -20px;
+			margin-right: -20px;
+			padding: 0;
+			.img-holder {
+				img {
+					width: 100%;
+				}
+				.bottom-layer {
+					display: none;
+				}
+			}
+			.category {
+				position: static;
+				display: block;
+				padding-left: 20px;
+				padding-right: 20px;
+				transform: rotate(0deg) translateX(0);
+			}
+		}
+		&__link {
+			padding-left: 20px;
+			padding-right: 20px;
+			&_title {
+				display: block;
+				max-width: initial;
+				margin-left: 0;
+				margin-right: 0;
+				margin-bottom: 10px;
+				&::before {
+					left: -58px;
+				}
+			}
+			.btn-more {
+				float: none;
+			}
+		}
+		&__info {
+			display: none;
+		}
+	}
+}

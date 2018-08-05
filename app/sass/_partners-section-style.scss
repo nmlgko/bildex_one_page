@@ -1,0 +1,16 @@
+.partner {
+	&__caption {
+		margin-bottom: 50px;
+	}
+	&__slider {
+		margin-bottom: 90px;
+	}
+	&__slider {
+		&_icon {
+			opacity: .5;
+			img {
+				filter: grayscale(100%);
+			}
+		}
+	}
+}
